@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "ddns_bot"
+version = "0.1.0"
+description = "A DDNS bot for Hetzner"
+authors = ["Endre Krohn <endre-krohn@outlook.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+requests = "^2.26.0"
+pydantic = {extras = ["dotenv"], version = "^1.8.2"}
+
+[tool.poetry.dev-dependencies]
+black = "^21.10b0"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
